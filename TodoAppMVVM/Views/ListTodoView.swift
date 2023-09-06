@@ -16,6 +16,7 @@ struct ListTodoView: View {
             Image(systemName: todo.isCompleted ? "checkmark.circle" : "circle")
                 .foregroundColor(todo.isCompleted ? Color.green: Color.gray)
             Text(todo.todo)
+                .strikethrough(todo.isCompleted)
             Spacer()
         }
     }
