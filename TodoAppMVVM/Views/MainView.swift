@@ -17,7 +17,7 @@ struct MainView: View {
                 ListTodoView(todo: item)
                     .onTapGesture {
                         withAnimation(.linear) {
-                            todoViewModel.toggleCompleted(item)
+                            todoViewModel.toggleCompleted(todo: item)
                         }
                     }
             }
