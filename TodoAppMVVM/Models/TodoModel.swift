@@ -9,7 +9,8 @@ import Foundation
 
 // Immutable Struct
 
-struct TodoModel: Identifiable {
+struct TodoModel: Identifiable, Codable {
+    static var keyList: String = "todo_list"
     let id: String
     let todo: String
     let isCompleted: Bool
